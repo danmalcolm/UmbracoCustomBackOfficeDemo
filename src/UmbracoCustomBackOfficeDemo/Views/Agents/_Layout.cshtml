@@ -1,0 +1,51 @@
+﻿@using ClientDependency.Core.Mvc
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.Title</title>
+
+    @{
+        Html.RequiresCss("~/umbraco/assets/css/umbraco.css");
+
+        Html.RequiresJs("~/umbraco_client/Application/NamespaceManager.js");
+        Html.RequiresJs("~/umbraco_client/Application/UmbracoUtils.js");
+        Html.RequiresJs("~/umbraco_client/ui/json2.js");
+        Html.RequiresJs("~/umbraco_client/ui/base2.js");
+        Html.RequiresJs("~/umbraco_client/ui/jquery.js");
+        Html.RequiresJs("~/umbraco_client/ui/jquery.ui.js");
+
+        Html.RequiresJs("~/umbraco_client/Application/Extensions.js");
+        Html.RequiresJs("~/umbraco_client/Application/UmbracoApplicationActions.js");
+        Html.RequiresJs("~/umbraco_client/Application/HistoryManager.js");
+        Html.RequiresJs("~/umbraco_client/Application/UmbracoClientManager.js");
+
+        Html.RequiresJs("Application/jQuery/jquery.ba-bbq.min.js"); ;
+        Html.RequiresJs("ui/jQueryWresize.js");
+        Html.RequiresJs("modal/jquery.simplemodal.1.4.1.custom.js");
+        Html.RequiresJs("Application/jQuery/jquery.cookie.js");
+        Html.RequiresJs("Application/JQuery/jquery.metadata.min.js");
+        Html.RequiresJs("Application/jQuery/jquery.hotkeys.js");
+    }
+
+    @Html.RenderCssHere()
+    @Html.RenderJsHere()
+</head>
+<body class="umbracoPage">
+    <div class="umb-panel form-horizontal umb-panel-nobody">
+        <div class="umb-panel-header">
+            <div class="row-fluid">
+                <span class="span8">
+                    <h1 class="headline">@ViewBag.Title</h1>
+                </span>
+                <span class="span4">
+                    <div class="btn-toolbar umb-btn-toolbar">
+                        <div class="btn-group">
+                            @RenderSection("ActionButtons", false)
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>

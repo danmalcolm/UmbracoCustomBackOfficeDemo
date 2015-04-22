@@ -1,0 +1,21 @@
+@inherits DocumentTemplate<UmbracoCustomBackOfficeDemo.Models.DocumentTypes.Page>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="@Document.MetaDescription"/>
+    <title>@Document.Title</title>
+
+</head>
+    <body>
+        <header>
+            <nav>
+                Umbraco CodeGen Demo - <a href="/">Home</a> | <a href="/news">News</a>
+            </nav>
+        </header>
+        <section>
+            <h1>@Document.Title</h1>
+            @RenderBody()
+        </section>
+    </body>
+</html>

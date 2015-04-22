@@ -1,0 +1,11 @@
+?@inherits DocumentTemplate<NewsListing>
+@Document.MainContent
+<ul>
+    @{
+        var articles = Document.Children.As<NewsArticle>();
+        foreach (var article in articles)
+        {
+            <li>@article.Title - <a href="@article.Url">read more</a></li>
+        }
+    }
+</ul>

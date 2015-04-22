@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Agents";
+    Layout = "_Layout.cshtml";
+}
+<div class="umb-pane " style="">
+    <div class="control-group umb-control-group" style="">
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <td>Agent</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="javascript:UmbClientMgr.contentFrame('@Url.Action("Edit", "Agents", new { id = 1})')">Agent Smith</a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:UmbClientMgr.contentFrame('@Url.Action("Edit", "Agents", new { id = 1})')">Agent Smith</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@model UmbracoCustomBackOfficeDemo.PropertyManagement.Controllers.Agent
+@{
+
+    ViewBag.Title = "Edit Agent " + Model.Name;
+    Layout = "_Layout.cshtml";
+}
+<form class="form-horizontal">
+    <div class="umb-pane " style="">
+        <div class="control-group umb-control-group" style="">
+
+            <div class="umb-el-wrap ">
+                <label class="control-label" for="inputPassword">Id</label>
+                <div class="controls controls-row">
+                    @Html.DisplayFor(x => x.Id)
+                </div>
+            </div>
+
+            <div class="umb-el-wrap ">
+                @Html.LabelFor(x => x.Name, new { @class = "control-label" })
+                <div class="controls controls-row">
+                    @Html.EditorFor(x => x.Name)
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>

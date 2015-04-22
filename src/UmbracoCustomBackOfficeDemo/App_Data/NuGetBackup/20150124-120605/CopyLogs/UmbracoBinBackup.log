@@ -1,0 +1,33 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 24 January 2015 12:06:06
+   Source : C:\Users\Dan\Documents\Dev\UmbracoCodeGenDemo\src\UmbracoCodeGenDemo\bin\
+     Dest : C:\Users\Dan\Documents\Dev\UmbracoCodeGenDemo\src\UmbracoCodeGenDemo\App_Data\NuGetBackup\20150124-120605\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   3	C:\Users\Dan\Documents\Dev\UmbracoCodeGenDemo\src\UmbracoCodeGenDemo\bin\
+	    New File  		    4096	UmbracoCodeGenDemo.dll  0%  100%  
+	    New File  		     353	UmbracoCodeGenDemo.dll.config  0%  100%  
+	    New File  		    7680	UmbracoCodeGenDemo.pdb  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         0         0         0         0
+   Files :         3         3         0         0         0         0
+   Bytes :    11.8 k    11.8 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :              175782 Bytes/sec.
+   Speed :              10.058 MegaBytes/min.
+   Ended : 24 January 2015 12:06:06
+
